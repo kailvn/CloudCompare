@@ -1,5 +1,9 @@
 cmake_minimum_required( VERSION 3.10 )
 
+if(CMAKE_TOOLCHAIN_FILE)
+    include(${CMAKE_TOOLCHAIN_FILE})
+endif(CMAKE_TOOLCHAIN_FILE)
+
 project( CloudCompareProjects )
 
 # One shouldn't generate the BUILD project directly in the SOURCES folder!
